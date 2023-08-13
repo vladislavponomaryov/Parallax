@@ -1,0 +1,49 @@
+// Main
+$fontFamily: 'Roboto', sans-serif;
+
+//Fonts
+$Paper: 'Paper';
+@font-face {
+  font-family: "Paper";
+  src: local('Paper');
+  src: url('../../src/assets/fonts/Paper.otf') format('opentype');
+}
+$IHB: 'IntroHeadB';
+@font-face {
+  font-family: "IntroHeadB";
+  src: local('IntroHeadB');
+  src: url('../../src/assets/fonts/IntroHeadB-H2Base.otf') format('opentype');
+}
+@font-face {
+  font-family: "IntroHead2";
+  src: local('IntroHead2');
+  src: url('../../src/assets/fonts/IntroHeadBUC-H2Base.otf') format('opentype');
+}
+@font-face {
+  font-family: "IntroHead3";
+  src: local('IntroHead3');
+  src: url('../../src/assets/fonts/IntroHeadR-Base.otf') format('opentype');
+}
+
+//Element colors
+
+
+// Colors
+$grayLight: #D4CACA;
+$grayLighter: #F1F1F1;
+$grayWhite: #FBFBFB;
+$black: #000000;
+$red: #FF0000;
+$blue: #1F2C75;
+$orange: #FFA023;
+$gray: #ACACAC;
+
+$logo: #000000;
+$grayDark: #828282;
+$grayMiddle: #C4C4C4;
+$white: #ffffff;
+
+//Colors modal
+$modalInput: #FDFCFC;
+$modalText: #303030;
+$modalBorder: rgba(134, 134, 134, 0.5);

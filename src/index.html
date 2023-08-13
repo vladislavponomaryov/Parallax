@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Catalog</title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <!--    Bootstrap reboot -->
+    <link rel="stylesheet" href="./styles/bootstrap-reboot.min.css"/>
+    <!--    Add main styles-->
+    <link rel="stylesheet" href="styles/main.scss"/>
+    <!--    Add media query -->
+    <link rel="stylesheet" href="styles/media.scss"/>
+    <!--    Add Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="content">
+            <div class="start">
+                <a id="logo" href="">
+                    <img src="./assets/images/logo.svg" alt="Logotype">
+                </a>
+            </div>
+            <div class="end">
+                <nav id="navigation">
+                    <ul>
+                        <li><a href="#presentation">О лимонаде</a></li>
+                        <li class="active">
+                            <a href="#product1">Вкусы</a>
+                            <ul>
+                                <li><a href="#product1">Манго-кокос</a></li>
+                                <li><a href="#product2">Арбуз</a></li>
+                                <li><a href="#product2">Персик</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#product1">Где купить</a></li>
+                        <li><a href="#product1">Задать вопрос</a></li>
+                        <li><a href="#product1">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <button id="navigationButton" class="open">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="presentation" id="presentation">
+        <img class="parallax1 rellax" src="./assets/images/theme/parallax/parallax1.png" alt="Паралакс">
+        <img class="parallax2 rellax" src="./assets/images/theme/parallax/parallax2.png" alt="Паралакс">
+        <img class="presentImage" src="./assets/images/theme/present.jpg" alt="Лимонады «Волчок»">
+        <div class="about">
+            <div class="container">
+                <div class="content">
+                    <p class="aboutCompany">Лимонады «Волчок» — это сокосодержащие безалкогольные напитки для тех, кого мучает жажда творчества. В их основе — ягоды и экзотические фрукты. Мы постоянно экспериментируем с миксами, потому что терпеть не можем банальные вкусы. Так мы создаем крафтовые напитки за рамками привычных форм и сочетаний. Для нас это творческий процесс, и мы приглашаем насладиться им вместе.</p>
+                    <img class="original" src="../src/assets/images/theme/our.png" alt="У нас по другому ">
+                    <h2>У нас по другому</h2>
+                    <p class="aboutProduct">Крафтовые лимонады с оригинальными вкусами — мы не повторяемся и не повторяем.<br/>
+                        Стильный и яркий дизайн — для тех, кто выбирает глазами. 😉<br/>
+                        Пастеризация вместо консервантов — увеличивает срок годности без использования искусственных добавок.<br/>
+                        Больше натуральных ингредиентов — мы отказались от суррогатов, которыми заменяют натуральные продукты.<br/>
+                        Средняя газация — для более мягкого и полного вкуса.</p>
+                    <a href="#product1"><img class="iconNext animation" src="../src/assets/images/theme/next-arrow.png" alt="Дальше"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product yellow" id="product1">
+        <div class="container">
+            <div class="content">
+                <ul class="productMenu">
+                    <li class="active"><a href="#product1">МАНГО-КОКОС</a></li>
+                    <li><a href="#product2">АРБУЗ</a></li>
+                    <li><a href="#product1">ПЕРСИК</a></li>
+                    <li><a href="#product1">ГРЕЙПФРУТ-ГИБИСКУС</a></li>
+                    <li><a href="#product1">ЛИЧИ-ГРУША</a></li>
+                    <li><a href="#product1">COLA</a></li>
+                </ul>
+                <div>
+                    <div class="productPreview">
+                        <img src="./assets/images/product/1/main.png" alt="Напиток манго-кокос">
+                    </div>
+                    <div class="aboutProduct">
+                        <h4>вкус</h4>
+                        <h1>Манго-кокос</h1>
+                        <p>Пляжная свежесть с легкой кислинкой. Лимонад со сладким ароматом и тропическим вкусом. Спелый манго + легкие оттенки кокоса = вкус, который переносит вас на пляжную вечеринку. Ярко и необычно. Возможно наличие осадка — все как в тропиках.</p>
+                    </div>
+                    <div class="sub">
+                        <img class="productSub" src="./assets/images/product/1/sub.png" alt="Вайб фрилансить на Бали">
+                        <button class="buttonModalOpen">Состав</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="parallax3 rellax" src="./assets/images/theme/parallax/parallax3.png" alt="Паралакс">
+    </section>
+
+    <section class="product red" id="product2">
+        <div class="container">
+            <div class="content">
+                <ul class="productMenu light">
+                    <li><a href="#product1">МАНГО-КОКОС</a></li>
+                    <li class="active"><a href="#product2">АРБУЗ</a></li>
+                    <li><a href="#product2">ПЕРСИК</a></li>
+                    <li><a href="#product2">ГРЕЙПФРУТ-ГИБИСКУС</a></li>
+                    <li><a href="#product2">ЛИЧИ-ГРУША</a></li>
+                    <li><a href="#product2">COLA</a></li>
+                </ul>
+                <div>
+                    <div class="productPreview">
+                        <img src="./assets/images/product/2/main.png" alt="Напиток манго-кокос">
+                    </div>
+                    <div class="aboutProduct">
+                        <h4>вкус</h4>
+                        <h1>Арбуз</h1>
+                        <p>Самый освежающий из всей линейки. Вкус жаркого лета. Лимонад на основе натурального сока с насыщенным вкусом арбуза и легкими нотками спелой дыни. Сладкий, как арбуз на даче, который только что с треском разрезали на самодельном деревянном столе. Неповторим как соло, так и в составе алкогольных коктейлей, например с игристым вином, мятой, базиликом, цитрусовыми.</p>
+                    </div>
+                    <div class="sub">
+                        <img class="productSub" src="./assets/images/product/2/sub.png" alt="Вайб фрилансить на Бали">
+                        <button class="light buttonModalOpen">Состав</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="parallax4 rellax" src="./assets/images/theme/parallax/parallax4.png" alt="Паралакс">
+    </section>
+
+</main>
+
+<div id="modalWrapper">
+    <div class="modal">
+        <div id="buttonModalClose" class="icon">
+            <img src="./assets/images/icons/close.png" alt="Close button"/>
+        </div>
+        <div id="firstBox">
+            <h1>Манго-кокос</h1>
+            <h1>Состав</h1>
+            <p>вода питьевая, сахар, концентрированное пюре из манго, регулятор кислотности Е331 и лимонная кислота, ароматизаторы пищевые натуральные: «тип Манго» и «тип Кокосовый» (натуральные вкусоароматические вещества, регулятор кислотности Е 260), антиокислитель аскорбиновая кислота, пищевая добавка краситель бета -каротин. </p>
+            <h1>Срок годности</h1>
+            <p>12 месяцев. Хранить при температуре от +2 до 35 °C</p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/mobileMenu.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+    var rellax = new Rellax('.rellax', {
+        speed: -3,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+    });
+</script>
+</body>
+</html>

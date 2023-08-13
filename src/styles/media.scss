@@ -1,0 +1,284 @@
+@import "variables";
+
+// Работает до 1400
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 84%;
+  }
+}
+
+// Работает до 1224
+@media screen and (max-width: 1224px) {
+  .parallax1 {
+    top: 15%;
+  }
+
+  .parallax3, .parallax4 {
+    display: none;
+  }
+}
+
+// Работает до 992
+@media screen and (max-width: 992px) {
+  header {
+    border: none;
+
+    nav#navigation {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      height: auto;
+      top: 88px;
+      width: 100%;
+
+      // box shadow only bottom
+      padding-bottom: 200px;
+      overflow: hidden;
+
+      // show animation
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-10px);
+
+      &.visible {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      > ul {
+        padding: 20px 8% 20px;
+      }
+
+      ul {
+        background: $grayWhite;
+        display: block;
+        column-count: 2;
+        width: 100%;
+        box-shadow: 0 50px 70px 50px rgba(0, 0, 0, 0.3);
+
+        > li {
+          a {
+            height: 65px;
+            line-height: 65px;
+          }
+        }
+
+        li {
+          page-break-inside: avoid;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            box-shadow: none;
+            padding: 0;
+
+            li {
+              a {
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                height: 40px;
+                line-height: 40px;
+              }
+
+              &:hover {
+                background: none;
+                a {
+                  color: $red;
+                }
+              }
+            }
+          }
+
+          &.active, &:hover {
+            background: none;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    #navigationButton {
+      display: block;
+    }
+  }
+
+  main {
+    .presentation {
+      .about {
+        h2 {
+          font-size: 40px;
+        }
+
+        .aboutProduct {
+          margin-top: 30px;
+        }
+
+        .iconNext {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    .product {
+
+      &.yellow {
+        padding-bottom: 120px;
+      }
+
+      &.red {
+        padding-top: 85px;
+      }
+
+      .productMenu {
+        display: none;
+      }
+
+      .content > div {
+        flex-direction: column;
+
+        .productPreview {
+          max-width: 600px;
+        }
+
+        .aboutProduct {
+          order: unset;
+          width: 100%;
+          text-align: center;
+          position: relative;
+          top: -10px;
+
+          h1 {
+            margin-bottom: 0;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .sub {
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+
+          img {
+            display: block;
+            max-width: 184px;
+            margin: 0 auto;
+          }
+
+          button {
+            float: none;
+            min-width: 175px;
+            top: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Работает до 768
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .parallax1, .parallax2 {
+    display: none;
+  }
+
+  header nav#navigation ul {
+    padding: 20px 0;
+
+    > li a {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  main .presentation {
+    .presentImage {
+      object-fit: cover;
+      height: 240px;
+    }
+
+    .about {
+      .aboutCompany {
+        font-size: 14px;
+        line-height: 1.25;
+        margin: 10px 0;
+      }
+
+      .original {
+        margin: 10px 0 20px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .aboutProduct {
+        font-size: 14px;
+        line-height: 1.15;
+        margin-top: 30px;
+      }
+
+      .iconNext {
+        margin: 15px 0 80px
+      }
+    }
+  }
+
+  main .product {
+    &.yellow {
+      padding-bottom: 60px;
+    }
+
+    &.red {
+      padding-top: 35px;
+    }
+
+    .content > div {
+      .sub {
+        padding-bottom: 0;
+
+        .productSub {
+          width: 45%;
+        }
+
+        button {
+          width: 100%;
+          top: 30px
+        }
+      }
+
+      .aboutProduct {
+        position: relative;
+        top: -10px;
+
+        h4 {
+          margin-bottom: 0px;
+        }
+
+        h1 {
+          font-size: 45px;
+          margin-bottom: 0px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 1.15;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
