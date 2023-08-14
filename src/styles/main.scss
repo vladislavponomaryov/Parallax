@@ -155,7 +155,7 @@ header {
 
   #navigationButton {
     display: none;
-    background: url("../../src/assets/images/icons/hamburger.png");
+    background: url("../../src/assets/images/icons/hamburger.svg");
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -166,7 +166,7 @@ header {
     transition: background 0.3s ease;
 
     &.close {
-      background: url("../../src/assets/images/icons/close.png");
+      background: url("../../src/assets/images/icons/close.svg");
       background-size: 40px;
       background-repeat: no-repeat;
       background-position: center center;

@@ -53,6 +53,20 @@
       right: 24px;
       top: 24px;
       width: 40px;
+
+      &:hover {
+        svg path {
+          fill: $red2;
+          stroke: $red2;
+        }
+      }
+
+      &:active {
+        svg path {
+          fill: $red3;
+          stroke: $red3;
+        }
+      }
     }
   }
 }

@@ -55,11 +55,11 @@
     <section class="presentation" id="presentation">
         <img class="parallax1 rellax" width="353"
              src="./assets/images/theme/parallax/parallax1.webp"
-             srcset="./assets/images/theme/parallax/parallax1.webp 1x,./assets/images/theme/parallax/parallax1_2x.webp 2x" alt="Паралакс">
+             srcset="./assets/images/theme/parallax/parallax1_2x.webp 1x,./assets/images/theme/parallax/parallax1_2x.webp 2x" alt="Паралакс">
         <img class="parallax2 rellax"
              width="265"
-             src="./assets/images/theme/parallax/parallax2.webp"
-             srcset="./assets/images/theme/parallax/parallax2.webp 1x,./assets/images/theme/parallax/parallax2_2x.webp 2x" alt="Паралакс">
+             src="./assets/images/theme/parallax/parallax2_2x.webp"
+             srcset="./assets/images/theme/parallax/parallax2_2x.webp 1x,./assets/images/theme/parallax/parallax2_2x.webp 2x" alt="Паралакс">
         <img class="presentImage"
              width="1920"
              srcset="./assets/images/theme/present_w320.webp 320w, ./assets/images/theme/present_w480.webp 480w, ./assets/images/theme/present_w992.webp 992w, ./assets/images/theme/present.webp 1x, ./assets/images/theme/present2x.webp 2x"
@@ -72,7 +72,7 @@
                     <img class="original"
                          width="715"
                          src="../src/assets/images/theme/our.webp"
-                         srcset="../src/assets/images/theme/our.webp 1x, ../src/assets/images/theme/our2x.webp 2x"
+                         srcset="../src/assets/images/theme/our2x.webp 1x, ../src/assets/images/theme/our2x.webp 2x"
                          alt="У нас по другому " loading="lazy">
                     <h2>У нас по другому</h2>
                     <p class="aboutProduct">Крафтовые лимонады с оригинальными вкусами — мы не повторяемся и не повторяем.<br/>
@@ -102,7 +102,7 @@
                         <img
                                 width="601"
                                 src="./assets/images/product/1/main.webp"
-                                srcset="./assets/images/product/1/main.webp 1x, ./assets/images/product/1/main_2x.webp 2x"
+                                srcset="./assets/images/product/1/main_2x.webp 1x, ./assets/images/product/1/main_2x.webp 2x"
                                 alt="Напиток манго-кокос" loading="lazy">
                     </div>
                     <div class="aboutProduct">
@@ -114,7 +114,7 @@
                         <img class="productSub"
                              width="288"
                              src="./assets/images/product/1/sub.webp"
-                             srcset="./assets/images/product/1/sub.webp 1x, ./assets/images/product/1/sub_2x.webp 2x"
+                             srcset="./assets/images/product/1/sub_2x.webp 1x, ./assets/images/product/1/sub_2x.webp 2x"
                              alt="Вайб фрилансить на Бали" loading="lazy">
                         <button class="buttonModalOpen"  aria-label="Состав" title="Состав">Состав</button>
                     </div>
@@ -124,7 +124,7 @@
         <img class="parallax3 rellax"
              width="275"
              src="./assets/images/theme/parallax/parallax3.webp"
-             srcset="./assets/images/theme/parallax/parallax3.webp 1x,./assets/images/theme/parallax/parallax3_2x.webp 2x"
+             srcset="./assets/images/theme/parallax/parallax3_2x.webp 1x,./assets/images/theme/parallax/parallax3_2x.webp 2x"
              alt="Паралакс" loading="lazy">
     </section>
 
@@ -144,7 +144,7 @@
                         <img
                                 width="591"
                                 src="./assets/images/product/2/main.webp"
-                                srcset="./assets/images/product/2/main.webp 1x, ./assets/images/product/2/main_2x.webp 2x"
+                                srcset="./assets/images/product/2/main_2x.webp 1x, ./assets/images/product/2/main_2x.webp 2x"
                                 alt="Напиток манго-кокос" loading="lazy">
                     </div>
                     <div class="aboutProduct">
@@ -156,7 +156,7 @@
                         <img class="productSub"
                              width="281"
                              src="./assets/images/product/2/sub.webp"
-                             srcset="./assets/images/product/2/sub.webp 1x, ./assets/images/product/2/sub_2x.webp 2x"
+                             srcset="./assets/images/product/2/sub_2x.webp 1x, ./assets/images/product/2/sub_2x.webp 2x"
                              alt="Вайб фрилансить на Бали" loading="lazy">
                         <button class="light buttonModalOpen" aria-label="Состав" title="Состав">Состав</button>
                     </div>
@@ -166,7 +166,7 @@
         <img class="parallax4 rellax"
              width="348"
              src="./assets/images/theme/parallax/parallax4.webp"
-             srcset="./assets/images/theme/parallax/parallax4.webp 1x,./assets/images/theme/parallax/parallax4_2x.webp 2x" alt="Паралакс" loading="lazy">
+             srcset="./assets/images/theme/parallax/parallax4_2x.webp 1x,./assets/images/theme/parallax/parallax4_2x.webp 2x" alt="Паралакс" loading="lazy">
     </section>
 
 </main>
@@ -174,7 +174,10 @@
 <div id="modalWrapper">
     <div class="modal">
         <div id="buttonModalClose" class="icon">
-            <img width="81" src="./assets/images/icons/close.png" alt="Close button" loading="lazy" />
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.1567 6.16824L6.66324 37.6617C5.4208 38.9041 3.53646 39.034 2.4544 37.952C1.37235 36.8699 1.50223 34.9856 2.74467 33.7431L34.2382 2.24959C35.4806 1.00724 37.365 0.877276 38.447 1.95933C39.529 3.04146 39.3991 4.92581 38.1567 6.16824Z" fill="black"/>
+                <path d="M6.16824 2.24956L37.6617 33.743C38.9041 34.9854 39.034 36.8698 37.952 37.9518C36.8699 39.0339 34.9856 38.904 33.7431 37.6616L2.24959 6.16805C1.00724 4.92569 0.877276 3.04127 1.95933 1.95922C3.04146 0.877241 4.92581 1.00712 6.16824 2.24956Z" fill="black"/>
+            </svg>
         </div>
         <div id="firstBox">
             <h1>Манго-кокос</h1>
