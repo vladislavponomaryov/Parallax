@@ -359,6 +359,10 @@ main {
         .sub {
           padding: 150px 0 0 18px;
 
+          > div {
+            height: 50px;
+          }
+
           button {
             background: transparent;
             border: 2px solid $black;
