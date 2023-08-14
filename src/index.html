@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="styles/main.scss"/>
     <!--    Add media query -->
     <link rel="stylesheet" href="styles/media.scss"/>
-    <!--    Add Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
-            rel="stylesheet"
-    />
+    <meta
+            name="description"
+            content="Лимонады «Волчок» — это сокосодержащие безалкогольные напитки для тех, кого мучает жажда творчества. В их основе — ягоды и экзотические фрукты.">
 </head>
 <body>
 <header>
@@ -49,7 +45,7 @@
                     </ul>
                 </nav>
 
-                <button id="navigationButton" class="open">
+                <button id="navigationButton" class="open"  aria-label="Меню" title="Меню">
                 </button>
             </div>
         </div>
@@ -93,13 +89,13 @@
                         <img src="./assets/images/product/1/main_2x.webp" alt="Напиток манго-кокос" loading="lazy">
                     </div>
                     <div class="aboutProduct">
-                        <h4>вкус</h4>
+                        <span>вкус</span>
                         <h1>Манго-кокос</h1>
                         <p>Пляжная свежесть с легкой кислинкой. Лимонад со сладким ароматом и тропическим вкусом. Спелый манго + легкие оттенки кокоса = вкус, который переносит вас на пляжную вечеринку. Ярко и необычно. Возможно наличие осадка — все как в тропиках.</p>
                     </div>
                     <div class="sub">
                         <img class="productSub" src="./assets/images/product/1/sub_2x.webp" alt="Вайб фрилансить на Бали" loading="lazy">
-                        <button class="buttonModalOpen">Состав</button>
+                        <button class="buttonModalOpen"  aria-label="Состав" title="Состав">Состав</button>
                     </div>
                 </div>
             </div>
@@ -123,13 +119,13 @@
                         <img src="./assets/images/product/2/main_2x.webp" alt="Напиток манго-кокос" loading="lazy">
                     </div>
                     <div class="aboutProduct">
-                        <h4>вкус</h4>
+                        <span>вкус</span>
                         <h1>Арбуз</h1>
                         <p>Самый освежающий из всей линейки. Вкус жаркого лета. Лимонад на основе натурального сока с насыщенным вкусом арбуза и легкими нотками спелой дыни. Сладкий, как арбуз на даче, который только что с треском разрезали на самодельном деревянном столе. Неповторим как соло, так и в составе алкогольных коктейлей, например с игристым вином, мятой, базиликом, цитрусовыми.</p>
                     </div>
                     <div class="sub">
                         <img class="productSub" src="./assets/images/product/2/sub_2x.webp" alt="Вайб фрилансить на Бали" loading="lazy">
-                        <button class="light buttonModalOpen">Состав</button>
+                        <button class="light buttonModalOpen" aria-label="Состав" title="Состав">Состав</button>
                     </div>
                 </div>
             </div>
@@ -156,7 +152,8 @@
 
 <script src="scripts/mobileMenu.js"></script>
 <script src="scripts/modal.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<!--Parallax library-->
+<script src="scripts/rellax.min.js"></script>
 <script>
     var rellax = new Rellax('.rellax', {
         speed: -3,
