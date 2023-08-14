@@ -2,27 +2,31 @@
 $fontFamily: 'Roboto', sans-serif;
 
 //Fonts
-$Paper: 'Paper';
+$Paper: 'Paper', sans-serif;
 @font-face {
   font-family: "Paper";
   src: local('Paper');
   src: url('../../src/assets/fonts/Paper.otf') format('opentype');
+  font-display: swap;
 }
-$IHB: 'IntroHeadB';
+$IHB: 'IntroHeadB', sans-serif;
 @font-face {
   font-family: "IntroHeadB";
   src: local('IntroHeadB');
   src: url('../../src/assets/fonts/IntroHeadB-H2Base.otf') format('opentype');
+  font-display: swap;
 }
 @font-face {
   font-family: "IntroHead2";
   src: local('IntroHead2');
   src: url('../../src/assets/fonts/IntroHeadBUC-H2Base.otf') format('opentype');
+  font-display: swap;
 }
 @font-face {
   font-family: "IntroHead3";
   src: local('IntroHead3');
   src: url('../../src/assets/fonts/IntroHeadR-Base.otf') format('opentype');
+  font-display: swap;
 }
 
 //Element colors
